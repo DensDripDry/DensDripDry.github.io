@@ -2,64 +2,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Den's+ Drip & Dry</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #eaf6fb; color: #333; }
-    header { background: #2980b9; color: white; padding: 20px; text-align: center; }
-    section { padding: 20px; }
-    h1, h2 { margin: 0 0 10px; }
-    .brand-plus { color: #2ecc71; font-weight: 900; font-size: 1.5em; }
-    .button {
-      display: block;
-      width: 100%;
-      max-width: 300px;
-      margin: 20px auto;
-      padding: 15px;
-      background-color: #3498db;
-      color: white;
-      text-align: center;
-      text-decoration: none;
-      font-size: 18px;
-      border-radius: 5px;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f0f4f8;
+      color: #333;
     }
-    footer { text-align: center; padding: 10px; font-size: 14px; color: #777; }
+    header {
+      background: #0077cc;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    .brand-plus {
+      color: #2ecc71;
+      font-weight: bold;
+      font-size: 2em;
+    }
+    section {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      color: #0077cc;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #0077cc;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-top: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+      font-size: 0.9em;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    input, textarea {
+      margin-bottom: 15px;
+      padding: 10px;
+      font-size: 1em;
+    }
   </style>
 </head>
 <body>
+  <header>
+    <h1><span class="brand-plus">+</span> Den's Drip & Dry</h1>
+    <p>Why do your laundry when you have better things to do?</p>
+  </header>
 
-<header>
-  <h1>Den's<span class="brand-plus">+</span> Drip & Dry</h1>
-  <p>You’ve got better things to do than laundry. Let us handle it for you.</p>
-</header>
+  <section>
+    <h2>Book a Pickup</h2>
+    <a class="button" href="https://wa.me/31612345678?text=Hi!%20I'm%20ready%20to%20schedule%20a%20pickup.">Message Us on WhatsApp</a>
+  </section>
 
-<section>
-  <h2>Book a Pickup</h2>
-  <a class="button" href="https://wa.me/31612345678?text=Hello!%20I’m%20ready%20to%20drop%20my%20laundry—can%20you%20pick%20it%20up%20today%20from%20[my%20address]?" target="_blank">Book via WhatsApp</a>
-</section>
+  <section>
+    <h2>Pricing</h2>
+    <p>Wash & Fold: <strong>€2.50/kg</strong></p>
+    <p>Minimum charge: <strong>5kg (€12.50)</strong></p>
+    <p>Free pickup for orders over <strong>€25</strong></p>
+  </section>
 
-<section>
-  <h2>Pricing</h2>
-  <p>Wash & Fold: <strong>€2.50/kg</strong></p>
-  <p>Minimum charge: <strong>5kg (€12.50)</strong></p>
-</section>
+  <section>
+    <h2>Loyalty Program</h2>
+    <p>Every 6th wash is free!</p>
+  </section>
 
-<section>
-  <h2>Loyalty</h2>
-  <p>Every 6th wash is free!</p>
-</section>
+  <section>
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/xdkgapld" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="_replyto" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="button">Send Message</button>
+    </form>
+  </section>
 
-<section>
-  <h2>Contact</h2>
-  <p>WhatsApp: +31 6 1234 5678</p>
-  <p>Email: hello@dripdrydepijp.nl</p>
-  <p>Instagram: @dripdrydepijp</p>
-</section>
-
-<footer>
-  &copy; 2025 Den's+ Drip & Dry. All rights reserved.
-</footer>
-
+  <footer>
+    &copy; 2025 Den's+ Drip & Dry. All rights reserved.
+  </footer>
 </body>
 </html>
