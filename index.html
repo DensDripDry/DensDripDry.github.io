@@ -5,40 +5,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Den's+ Drip & Dry | Laundry Pickup & Delivery in De Pijp</title>
-  <meta name="description" content="Spend more time doing what you love. Den's+ Drip & Dry offers fast, local laundry pickup & delivery in De Pijp. Affordable wash & fold. Book now!" />
-  <meta name="keywords" content="laundry, pickup, delivery, De Pijp, Amsterdam, drip and dry, wash and fold, laundromat" />
-  <meta name="author" content="Den's+ Drip & Dry" />
-
-  <!-- Open Graph / Social Sharing -->
+  <meta name="description" content="Spend more time doing what you love. Den's+ Drip & Dry offers fast, local laundry pickup & delivery. Affordable wash & fold. Book now!" />
   <meta property="og:title" content="Den's+ Drip & Dry | Local Laundry Pickup & Delivery" />
-  <meta property="og:description" content="Affordable, eco-friendly laundry service in De Pijp. Pickup & delivery within 10km. Book your wash today!" />
-  <meta property="og:image" content="https://via.placeholder.com/600x300?text=Drip+%26+Dry+De+Pijp" />
+  <meta property="og:description" content="Affordable, eco-friendly laundry service. Pickup & delivery within 10km. Book your wash today!" />
+  <meta property="og:image" content="https://densdripdry.github.io/images/flyer_preview.jpg" />
   <meta property="og:url" content="https://densdripdry.github.io/" />
   <meta property="og:type" content="website" />
-
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #1e1e1e; color: #eee; }
+    body { font-family: Arial, sans-serif; margin: 0; background: #f7f7f7; color: #333; }
     header { background: #0073aa; color: white; text-align: center; padding: 2rem 1rem; }
     .brand-plus { color: #2ecc71; font-weight: 900; font-size: 1.5em; }
-    section { padding: 2rem 1rem; max-width: 700px; margin: auto; }
-    h2 { color: #3aaaff; }
+    section { padding: 2rem 1rem; max-width: 800px; margin: auto; }
+    h2 { color: #0073aa; }
     .button, button {
       display: inline-block; background: #3498db; color: white; padding: 0.75rem 1.5rem;
       border: none; border-radius: 4px; font-size: 1rem; text-decoration: none; margin-top: 1rem;
     }
-    form input, form textarea {
-      width: 100%; padding: 0.75rem; margin: 0.5rem 0;
-      border: none; border-radius: 4px;
-    }
-    .gallery {
-      display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;
-    }
-    .gallery img {
-      width: 200px; border-radius: 10px;
-    }
-    footer {
-      text-align: center; padding: 1rem; color: #aaa; font-size: 0.9em;
-    }
+    img.qr-code { display: block; margin: 2rem auto; width: 180px; }
+    footer { text-align: center; padding: 1rem; font-size: 0.9rem; color: #777; }
   </style>
 </head>
 <body>
@@ -47,47 +31,27 @@
     <p>Why do your laundry when you have better things to do?</p>
   </header>
 
-  <section id="pickup">
+  <section>
     <h2>Book a Pickup</h2>
-    <a class="button" href="https://wa.me/31612345678?text=Hello!%20I%27m%20ready%20to%20arrange%20a%20laundry%20pickup.">Message Us on WhatsApp</a>
+    <p>Use the button or scan the QR code below to get started!</p>
+    <a class="button" href="https://wa.me/31612345678?text=Hello!%20I'm%20ready%20to%20arrange%20a%20laundry%20pickup.">Message Us on WhatsApp</a>
+    <img class="qr-code" src="densdripdry_qr_github.png" alt="QR code linking to site" />
   </section>
 
-  <section id="pricing">
-    <h2>Pricing</h2>
-    <p>Wash & Fold: <strong>€2.50/kg</strong></p>
-    <p>Minimum charge: <strong>5kg (€12.50)</strong></p>
-    <p>Free pickup for orders over <strong>€25</strong></p>
-  </section>
-
-  <section id="loyalty">
-    <h2>Loyalty Program</h2>
+  <section>
+    <h2>Our Services</h2>
+    <p>Wash & Fold: €2.50/kg (min. €12.50)</p>
+    <p>Free pickup for orders over €25</p>
     <p>Every 6th wash is free!</p>
   </section>
 
-  <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery">
-      <img src="https://via.placeholder.com/200x150?text=Machine+1" alt="High-efficiency washing machine in laundromat" />
-      <img src="https://via.placeholder.com/200x150?text=Interior" alt="Interior view of the laundromat facility" />
-      <img src="https://via.placeholder.com/200x150?text=Happy+Customer" alt="Happy customer receiving laundry delivery" />
-    </div>
-  </section>
-
-  <section id="contact">
+  <section>
     <h2>Contact Us</h2>
     <form action="https://formspree.io/f/xdkgapld" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="_replyto" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <section id="newsletter">
-    <h2>Join Our Newsletter</h2>
-    <form action="https://formspree.io/f/xdkgapld" method="POST">
-      <input type="email" name="_replyto" placeholder="Your Email" required />
-      <button type="submit">Subscribe</button>
+      <input type="text" name="name" placeholder="Your Name" required><br>
+      <input type="email" name="_replyto" placeholder="Your Email" required><br>
+      <textarea name="message" placeholder="Your Message" rows="4" required></textarea><br>
+      <button type="submit">Send</button>
     </form>
   </section>
 
