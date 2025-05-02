@@ -1,73 +1,112 @@
-body {
+
+/* Reset */
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f8fdfd;
-  color: #222;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+/* General Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+}
+
+/* Container (if you use one later) */
 .container {
-  max-width: 900px;
+  max-width: 1200px;
   margin: auto;
   padding: 20px;
 }
+
+/* Header */
 header {
-  background: #0077a3;
-  color: white;
   text-align: center;
-  padding: 20px 0;
+  margin-bottom: 40px;
 }
+
 header img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
-h1 {
-  margin: 0.5em 0 0.2em;
+
+header h1 {
+  font-size: 2.5em;
+  color: #0077b6;
 }
-h2 {
-  color: #333;
+
+/* Gallery Section */
+.gallery img {
+  width: 30%;
+  margin: 1.5%;
+  border-radius: 8px;
+  transition: transform 0.3s;
 }
-p {
-  margin-top: 0;
+
+.gallery img:hover {
+  transform: scale(1.05);
 }
-.button {
-  display: inline-block;
-  background: #0077a3;
-  color: white;
-  padding: 10px 20px;
-  margin: 10px 0;
-  text-decoration: none;
-  border-radius: 4px;
-}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
   justify-content: center;
+  margin-bottom: 40px;
 }
-.gallery img {
-  width: 100%;
-  max-width: 250px;
-  border-radius: 4px;
+
+/* Section Headings */
+section h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #0077b6;
 }
-form input, form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 8px;
-  margin-bottom: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto 40px auto;
 }
+
+form input,
+form textarea,
 form button {
-  background: #0077a3;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #0077b6;
   color: white;
-  padding: 10px 16px;
   border: none;
-  border-radius: 4px;
   cursor: pointer;
 }
+
+form button:hover {
+  background-color: #023e8a;
+}
+
+/* Newsletter Section */
+.newsletter {
+  background-color: #e0f7fa;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Footer */
 footer {
   text-align: center;
-  margin-top: 30px;
-  padding: 10px 0;
+  margin-top: 60px;
   font-size: 0.9em;
-  color: #777;
+  color: #555;
 }
