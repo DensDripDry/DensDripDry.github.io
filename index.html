@@ -9,19 +9,29 @@
   <link rel="icon" href="favicon.png" type="image/png" />
 </head>
 <body>
-  <header>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#newsletter">Newsletter</a></li>
+      <li><a href="#book">Scan to Book</a></li>
+    </ul>
+  </nav>
+
+  <header id="home">
     <img src="banner.png" alt="Den's+ Drip & Dry Banner" />
     <h1>Den's+ Drip & Dry</h1>
     <p>Why do your laundry when you have better things to do?</p>
   </header>
 
-  <section class="gallery">
+  <section class="gallery" id="gallery">
     <img src="gallery1.png" alt="Laundry room 1" />
     <img src="gallery2.png" alt="Pickup bike" />
     <img src="gallery3.png" alt="Friendly staff" />
   </section>
 
-  <section>
+  <section id="contact">
     <h2>Contact Us</h2>
     <form action="https://formspree.io/f/yourformid" method="POST">
       <input type="text" name="name" placeholder="Your Name" required />
@@ -31,7 +41,7 @@
     </form>
   </section>
 
-  <section class="newsletter">
+  <section class="newsletter" id="newsletter">
     <h2>Stay in the Loop</h2>
     <p>Get updates, promotions & laundry tips</p>
     <form action="https://formspree.io/f/yourformid" method="POST">
@@ -40,7 +50,7 @@
     </form>
   </section>
 
-  <section class="qr-section">
+  <section class="qr-section" id="book">
     <h2>Scan to Book</h2>
     <img src="qr.png" alt="Scan to book" class="qr" />
   </section>
