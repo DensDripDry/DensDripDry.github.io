@@ -6,24 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Den's+ Drip & Dry</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon.png" type="image/png" />
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const elements = document.querySelectorAll('.fade-in');
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.1 });
-      elements.forEach(el => observer.observe(el));
-    });
-  </script>
 </head>
 <body>
-  
+
   <nav>
     <ul>
       <li><a href="#home">Home</a></li>
@@ -34,86 +19,75 @@
     </ul>
   </nav>
 
-  <!-- START HEADER -->
   <header id="home" class="fade-in">
     <div class="banner">
       <h2>Why do your laundry when you have better things to do?</h2>
     </div>
     <div class="brand-icons">
-      
-      
-      
+      <img src="gallery1.png" alt="Washing Machine Icon" />
+      <img src="gallery2.png" alt="Soap Bubbles Icon" />
+      <img src="gallery3.png" alt="Bike Icon" />
     </div>
     <h1>Den's+ Drip & Dry</h1>
     <p>Why do your laundry when you have better things to do?</p>
   </header>
-  <!-- END HEADER -->
 
-<section id="gallery class="gallery fade-in">
-    
-    
-    
+  <section id="gallery" class="gallery fade-in">
+    <img src="gallery1.png" alt="Laundry room 1" />
+    <img src="gallery2.png" alt="Pickup bike" />
+    <img src="gallery3.png" alt="Friendly staff" />
   </section>
 
   <section id="book" class="fade-in">
     <h2>Book a Pickup</h2>
-    <form action="https://formspree.io/f/yourformid" method="POST">
+    <form action="https://formspree.io/f/your-form-id" method="POST">
       <input type="text" name="name" placeholder="Full Name" required />
       <input type="email" name="email" placeholder="Email Address" required />
       <input type="tel" name="phone" placeholder="Phone Number" required />
       <input type="text" name="address" placeholder="Pickup Address" required />
-      <input type="datetime-local" name="pickup_time" required />
-      <select name="service_type" required>
+      <input type="datetime-local" name="datetime" required />
+      <select name="service">
         <option value="">Select Service</option>
-        <option value="Drop-off">Drop-off</option>
-        <option value="Pickup & Delivery">Pickup & Delivery</option>
-        <option value="Self-Service">Self-Service</option>
+        <option value="self">Self-Service</option>
+        <option value="drop">Drop-off</option>
+        <option value="delivery">Pickup & Delivery</option>
       </select>
       <textarea name="notes" placeholder="Additional Notes (Optional)"></textarea>
       <button type="submit">Book Now</button>
     </form>
-    
-  <img src="qr.png" alt="Scan to book" class="qr" />
-
-    
+    <img src="qr.png" alt="Scan to book" class="qr" />
   </section>
 
   <section id="contact" class="fade-in">
     <h2>Contact Us</h2>
-    <form action="https://formspree.io/f/yourformid" method="POST">
+    <form action="https://formspree.io/f/your-form-id" method="POST">
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
       <textarea name="message" placeholder="Your Message" required></textarea>
       <button type="submit">Send</button>
     </form>
-    
-  <img src="qr.png" alt="Scan to book" class="qr" />
-
   </section>
 
   <section id="newsletter" class="newsletter fade-in">
     <h2>Stay in the Loop</h2>
     <p>Get updates, promotions & laundry tips</p>
-    <form action="https://formspree.io/f/yourformid" method="POST">
-      <input type="email" name="email" placeholder="Enter your email" required />
+    <form>
+      <input type="email" placeholder="Enter your email" />
       <button type="submit">Subscribe</button>
     </form>
-    
-  <img src="qr.png" alt="Scan to book" class="qr" />
-
   </section>
 
-  <section id="updates" class="fade-in">
+  <section class="fade-in">
     <h2>Latest Updates</h2>
     <div class="blog-posts">
       <div class="post">
         <h3>How to Keep Whites Bright</h3>
-        <p>Don't let your white clothes turn grey. Here are simple home methods to keep them sparkling...</p>
+        <p>Don’t let your white clothes turn grey. Here are simple home methods to keep them sparkling...</p>
         <a href="#">Read More</a>
       </div>
       <div class="post">
         <h3>New Pickup Hours Added</h3>
-        <p>We've added early morning and late evening pickup times based on your feedback...</p>
+        <p>We’ve added early morning and late evening pickup times based on your feedback...</p>
         <a href="#">Read More</a>
       </div>
       <div class="post">
@@ -124,25 +98,17 @@
     </div>
   </section>
 
-  
   <footer class="fade-in">
     <p>&copy; 2025 Den's+ Drip & Dry. All rights reserved.</p>
     <div class="social-icons">
-      <a href="https://instagram.com/yourprofile" target="_blank" aria-label="Instagram">Instagram</a>
-      <a href="https://wa.me/31612345678" target="_blank" aria-label="WhatsApp">WhatsApp</a>
-      <a href="https://facebook.com/yourpage" target="_blank" aria-label="Facebook">Facebook</a>
-      <a href="https://tiktok.com/@yourhandle" target="_blank" aria-label="TikTok">TikTok</a>
-      <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">LinkedIn</a>
-      <a href="https://www.google.com/maps/place/Amsterdam/reviews" target="_blank" aria-label="Google Reviews">Google Reviews</a>
+      <a href="#">Instagram</a>
+      <a href="#">WhatsApp</a>
+      <a href="#">Facebook</a>
+      <a href="#">TikTok</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Google Reviews</a>
     </div>
   </footer>
 
-    <p>&copy; 2025 Den's+ Drip & Dry. All rights reserved.</p>
-  </footer>
-
-  <div class="whatsapp-float">
-    <a href="https://wa.me/31612345678" target="_blank">💬 Chat with us</a>
-  </div>
 </body>
 </html>
-
