@@ -13,9 +13,9 @@
     <ul>
       <li><a href="#home">Home</a></li>
       <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#book">Book a Pickup</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a href="#newsletter">Newsletter</a></li>
-      <li><a href="#book">Scan to Book</a></li>
     </ul>
   </nav>
 
@@ -25,10 +25,29 @@
     <p>Why do your laundry when you have better things to do?</p>
   </header>
 
-  <section class="gallery" id="gallery">
+  <section id="gallery" class="gallery">
     <img src="gallery1.png" alt="Laundry room 1" />
     <img src="gallery2.png" alt="Pickup bike" />
     <img src="gallery3.png" alt="Friendly staff" />
+  </section>
+
+  <section id="book">
+    <h2>Book a Pickup</h2>
+    <form action="https://formspree.io/f/yourformid" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="tel" name="phone" placeholder="Phone Number" required />
+      <input type="text" name="address" placeholder="Pickup Address" required />
+      <input type="datetime-local" name="pickup_time" required />
+      <select name="service_type" required>
+        <option value="">Select Service</option>
+        <option value="Drop-off">Drop-off</option>
+        <option value="Pickup & Delivery">Pickup & Delivery</option>
+        <option value="Self-Service">Self-Service</option>
+      </select>
+      <textarea name="notes" placeholder="Additional Notes (Optional)"></textarea>
+      <button type="submit">Book Now</button>
+    </form>
   </section>
 
   <section id="contact">
@@ -41,18 +60,13 @@
     </form>
   </section>
 
-  <section class="newsletter" id="newsletter">
+  <section id="newsletter" class="newsletter">
     <h2>Stay in the Loop</h2>
     <p>Get updates, promotions & laundry tips</p>
     <form action="https://formspree.io/f/yourformid" method="POST">
       <input type="email" name="email" placeholder="Enter your email" required />
       <button type="submit">Subscribe</button>
     </form>
-  </section>
-
-  <section class="qr-section" id="book">
-    <h2>Scan to Book</h2>
-    <img src="qr.png" alt="Scan to book" class="qr" />
   </section>
 
   <footer>
