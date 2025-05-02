@@ -12,7 +12,34 @@ body {
   line-height: 1.6;
   background-color: #f9f9f9;
   color: #333;
-  padding: 20px;
+  padding: 0 20px 20px 20px;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #0077b6;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
 }
 
 /* Container */
@@ -32,7 +59,7 @@ header img {
   width: auto;
   max-width: 100%;
   height: auto;
-  max-height: 200px;
+  max-height: 250px;
   object-fit: contain;
   display: block;
   margin: 0 auto 20px;
