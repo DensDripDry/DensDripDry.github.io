@@ -7,6 +7,21 @@
   <title>Den's+ Drip & Dry</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="favicon.png" type="image/png" />
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const elements = document.querySelectorAll('.fade-in');
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+
+      elements.forEach(el => observer.observe(el));
+    });
+  </script>
 </head>
 <body>
   <nav>
@@ -19,19 +34,19 @@
     </ul>
   </nav>
 
-  <header id="home">
+  <header id="home" class="fade-in">
     <img src="banner.png" alt="Den's+ Drip & Dry Banner" />
     <h1>Den's+ Drip & Dry</h1>
     <p>Why do your laundry when you have better things to do?</p>
   </header>
 
-  <section id="gallery" class="gallery">
+  <section id="gallery" class="gallery fade-in">
     <img src="gallery1.png" alt="Laundry room 1" />
     <img src="gallery2.png" alt="Pickup bike" />
     <img src="gallery3.png" alt="Friendly staff" />
   </section>
 
-  <section id="book">
+  <section id="book" class="fade-in">
     <h2>Book a Pickup</h2>
     <form action="https://formspree.io/f/yourformid" method="POST">
       <input type="text" name="name" placeholder="Full Name" required />
@@ -50,7 +65,7 @@
     </form>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="fade-in">
     <h2>Contact Us</h2>
     <form action="https://formspree.io/f/yourformid" method="POST">
       <input type="text" name="name" placeholder="Your Name" required />
@@ -60,7 +75,7 @@
     </form>
   </section>
 
-  <section id="newsletter" class="newsletter">
+  <section id="newsletter" class="newsletter fade-in">
     <h2>Stay in the Loop</h2>
     <p>Get updates, promotions & laundry tips</p>
     <form action="https://formspree.io/f/yourformid" method="POST">
@@ -69,7 +84,7 @@
     </form>
   </section>
 
-  <footer>
+  <footer class="fade-in">
     <p>&copy; 2025 Den's+ Drip & Dry. All rights reserved.</p>
   </footer>
 </body>
