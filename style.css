@@ -298,3 +298,16 @@ img {
 .gallery img:hover {
   transform: scale(1.05);
 }
+
+
+    /* === READ MORE LINKS === */
+    .read-more {
+      color: #32cd32;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .read-more:hover {
+      text-decoration: underline;
+    }
+    
