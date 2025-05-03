@@ -1,0 +1,143 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  font-size: 16px;
+}
+
+header {
+  background: #0077b6;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  background-color: #0077b6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.hero {
+  background-color: #0077b6;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 1.5rem;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 2rem 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 8px;
+  height: auto;
+  margin: 10px auto;
+}
+
+.booking, .contact, .newsletter, .updates {
+  padding: 2rem 1rem;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+input, select, textarea, button {
+  padding: 14px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+button {
+  background-color: #0077b6;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  min-height: 48px;
+}
+
+.qr {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.qr img {
+  max-width: 140px;
+  height: auto;
+}
+
+.updates article {
+  margin-bottom: 1.5rem;
+}
+
+.updates h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.3rem;
+}
+
+.updates a {
+  color: green;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #f1f1f1;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+footer a {
+  display: inline-block;
+  margin: 5px 12px;
+  text-decoration: none;
+  color: #0077b6;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  nav {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  nav a {
+    border: none;
+    width: auto;
+    padding: 8px 16px;
+  }
+
+  footer a {
+    display: inline-block;
+    margin: 5px 12px;
+  }
+}
