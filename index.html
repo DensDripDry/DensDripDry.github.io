@@ -4,111 +4,76 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Den's+ Drip & Dry</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Den’s+ Drip & Dry – Home</title>
+  
+<style>
+  .top-banner {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  .top-banner a {
+    background-color: #32cd32;
+    color: white;
+    padding: 5px 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    border-radius: 3px;
+  }
+  .top-banner span.close {
+    margin-left: 20px;
+    cursor: pointer;
+  }
+</style>
+
+  <style>
+    body { font-family: Arial, sans-serif; background: #f0f8ff; color: #333; text-align: center; padding: 100px 20px 60px; }
+    h1 { font-size: 2.8em; color: #0077b6; margin-bottom: 10px; }
+    p { font-size: 1.2em; margin: 10px auto 20px; max-width: 600px; }
+    .features { margin: 30px auto; list-style: none; padding: 0; }
+    .features li { margin: 10px 0; }
+    .contact a { display: inline-block; margin: 10px; padding: 12px 20px; background: #0077b6; color: #fff; text-decoration: none; border-radius: 5px; }
+    .contact a:hover { background: #023e8a; }
+    .newsletter { margin-top: 40px; }
+    input[type="email"] { padding: 10px; width: 250px; max-width: 80%; border: 1px solid #ccc; border-radius: 4px; }
+    button { padding: 10px 16px; background: #32cd32; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+    button:hover { background: #28a745; }
+  </style>
 </head>
 <body>
+  
+<div class="top-banner">
+  <span>Amsterdam’s Laundry Game Just Leveled Up. Join our launch list — exclusive perks await.</span>
+  <a href="#signup">Join Now</a>
+  <span class="close" onclick="this.parentElement.style.display='none';">×</span>
+</div>
 
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#book">Book a Pickup</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#newsletter">Newsletter</a></li>
-    </ul>
-  </nav>
-
-  <header id="home" class="fade-in">
-    <div class="banner">
-      <h2>Why do your laundry when you have better things to do?</h2>
-    </div>
-    <div class="brand-icons">
-      <img src="gallery1.png" alt="Washing Machine Icon" />
-      <img src="gallery2.png" alt="Soap Bubbles Icon" />
-      <img src="gallery3.png" alt="Bike Icon" />
-    </div>
-    <h1>Den's+ Drip & Dry</h1>
-    <p>Why do your laundry when you have better things to do?</p>
-  </header>
-
-  <section id="gallery" class="gallery fade-in">
-    <img src="gallery1.png" alt="Laundry room 1" />
-    <img src="gallery2.png" alt="Pickup bike" />
-    <img src="gallery3.png" alt="Friendly staff" />
-  </section>
-
-  <section id="book" class="fade-in">
-    <h2>Book a Pickup</h2>
+  <h1>Den’s+ Drip & Dry</h1>
+  <p>Why do your laundry when you have better things to do?</p>
+  <h2>Now Open! Book Today.</h2>
+  <p>Amsterdam’s most modern laundry service is almost here. Get ready for self-service, drop-off, and delivery laundry made easy.</p>
+  <ul class="features">
+    <li>• Self-Service Machines</li>
+    <li>• Drop-Off & Pickup</li>
+    <li>• Eco-Friendly Detergents</li>
+    <li>• Pickup & Delivery (Home!)</li>
+  </ul>
+  <div class="contact">
+    <a href="mailto:dripdrydepijp@gmail.com">Email Us</a>
+    <a href="https://wa.me/31612345678">WhatsApp</a>
+    <a href="qr.png">Scan Our QR Code</a>
+  </div>
+  <div class="newsletter">
+    <p>Want to be the first to know when we launch?</p>
     <form action="https://formspree.io/f/your-form-id" method="POST">
-      <input type="text" name="name" placeholder="Full Name" required />
-      <input type="email" name="email" placeholder="Email Address" required />
-      <input type="tel" name="phone" placeholder="Phone Number" required />
-      <input type="text" name="address" placeholder="Pickup Address" required />
-      <input type="datetime-local" name="datetime" required />
-      <select name="service">
-        <option value="">Select Service</option>
-        <option value="self">Self-Service</option>
-        <option value="drop">Drop-off</option>
-        <option value="delivery">Pickup & Delivery</option>
-      </select>
-      <textarea name="notes" placeholder="Additional Notes (Optional)"></textarea>
-      <button type="submit">Book Now</button>
+      <input type="email" name="email" placeholder="Enter your email" required />
+      <button type="submit">Notify Me</button>
     </form>
-    <img src="qr.png" alt="Scan to book" class="qr" />
-  </section>
-
-  <section id="contact" class="fade-in">
-    <h2>Contact Us</h2>
-    <form action="https://formspree.io/f/your-form-id" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
-
-  <section id="newsletter" class="newsletter fade-in">
-    <h2>Stay in the Loop</h2>
-    <p>Get updates, promotions & laundry tips</p>
-    <form>
-      <input type="email" placeholder="Enter your email" />
-      <button type="submit">Subscribe</button>
-    </form>
-  </section>
-
-  <section class="fade-in">
-    <h2>Latest Updates</h2>
-    <div class="blog-posts">
-      <div class="post">
-        <h3>How to Keep Whites Bright</h3>
-        <p>Don’t let your white clothes turn grey. Here are simple home methods to keep them sparkling...</p>
-        <a href="#" class="read-more">Read More</a>
-      </div>
-      <div class="post">
-        <h3>New Pickup Hours Added</h3>
-        <p>We’ve added early morning and late evening pickup times based on your feedback...</p>
-        <a href="#" class="read-more">Read More</a>
-      </div>
-      <div class="post">
-        <h3>Meet Our New Eco-Friendly Detergents</h3>
-        <p>We’ve gone greener! Learn how we’re switching to non-toxic, biodegradable options...</p>
-        <a href="#" class="read-more">Read More</a>
-      </div>
-    </div>
-  </section>
-
-  <footer class="fade-in">
-    <p>&copy; 2025 Den's+ Drip & Dry. All rights reserved.</p>
-    <div class="social-icons">
-      <a href="#">Instagram</a>
-      <a href="#">WhatsApp</a>
-      <a href="#">Facebook</a>
-      <a href="#">TikTok</a>
-      <a href="#">LinkedIn</a>
-      <a href="#">Google Reviews</a>
-    </div>
-  </footer>
-
+  </div>
 </body>
 </html>
