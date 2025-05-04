@@ -1,79 +1,65 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Den’s+ Drip & Dry – Coming Soon</title>
-  
-<style>
-  .top-banner {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-  }
-  .top-banner a {
-    background-color: #32cd32;
-    color: white;
-    padding: 5px 10px;
-    margin-left: 10px;
-    text-decoration: none;
-    border-radius: 3px;
-  }
-  .top-banner span.close {
-    margin-left: 20px;
-    cursor: pointer;
-  }
-</style>
-
+  <title>Coming Soon – Den’s+ Drip & Dry</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" />
   <style>
-    body { font-family: Arial, sans-serif; background: #f0f8ff; color: #333; text-align: center; padding: 100px 20px 60px; }
-    h1 { font-size: 2.8em; color: #0077b6; margin-bottom: 10px; }
-    p { font-size: 1.2em; margin: 10px auto 20px; max-width: 600px; }
-    .features { margin: 30px auto; list-style: none; padding: 0; }
-    .features li { margin: 10px 0; }
-    .contact a { display: inline-block; margin: 10px; padding: 12px 20px; background: #0077b6; color: #fff; text-decoration: none; border-radius: 5px; }
-    .contact a:hover { background: #023e8a; }
-    .newsletter { margin-top: 40px; }
-    input[type="email"] { padding: 10px; width: 250px; max-width: 80%; border: 1px solid #ccc; border-radius: 4px; }
-    button { padding: 10px 16px; background: #32cd32; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
-    button:hover { background: #28a745; }
+    body.comingsoon-page {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(to right, #f1f7fa, #dceaf4);
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .comingsoon-container {
+      background: #ffffff;
+      border: 1px solid #d0d7e3;
+      border-radius: 10px;
+      padding: 3rem 2rem;
+      max-width: 500px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .comingsoon-container h1 {
+      color: #1b4e75;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .comingsoon-container p {
+      color: #4a4a4a;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+
+    .comingsoon-container .btn {
+      background-color: #1b4e75;
+      color: #fff;
+      padding: 0.6rem 1.4rem;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+
+    .comingsoon-container .btn:hover {
+      background-color: #153d5c;
+    }
   </style>
 </head>
-<body>
-  
-<div class="top-banner">
-  <span>Amsterdam’s Laundry Game Just Leveled Up. Join our launch list — exclusive perks await.</span>
-  <a href="#signup">Join Now</a>
-  <span class="close" onclick="this.parentElement.style.display='none';">×</span>
-</div>
-
-  <h1>Den’s+ Drip & Dry</h1>
-  <p>Why do your laundry when you have better things to do?</p>
-  <h2>We're getting ready to launch!</h2>
-  <p>Amsterdam’s most modern laundry service is almost here. Get ready for self-service, drop-off, and delivery laundry made easy.</p>
-  <ul class="features">
-    <li>• Self-Service Machines</li>
-    <li>• Drop-Off & Pickup</li>
-    <li>• Eco-Friendly Detergents</li>
-    <li>• Pickup & Delivery (Coming Soon!)</li>
-  </ul>
-  <div class="contact">
-    <a href="mailto:dripdrydepijp@gmail.com">Email Us</a>
-    <a href="https://wa.me/31612345678">WhatsApp</a>
-    <a href="qr.png">Scan Our QR Code</a>
-  </div>
-  <div class="newsletter">
-    <p>Want to be the first to know when we launch?</p>
-    <form action="https://formspree.io/f/your-form-id" method="POST">
-      <input type="email" name="email" placeholder="Enter your email" required />
-      <button type="submit">Notify Me</button>
-    </form>
+<body class="comingsoon-page">
+  <div class="comingsoon-container">
+    <h1>Coming Soon</h1>
+    <p>This feature is currently in development. We’re working hard to bring it to you as soon as possible!</p>
+    <a href="index.html" class="btn">Back to Home</a>
   </div>
 </body>
 </html>
