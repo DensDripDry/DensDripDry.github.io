@@ -1,0 +1,75 @@
+/* Core layout */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7f9fb;
+  color: #333;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background-color: #1b4e75;
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* General button styling */
+.btn {
+  background-color: #1b4e75;
+  color: #fff;
+  padding: 0.6rem 1.4rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #153d5c;
+}
+
+/* Footer */
+footer {
+  background-color: #f0f0f0;
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Sticky contact bar */
+.sticky-contact-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-top: 1px solid #ccc;
+  z-index: 999;
+}
+
+.sticky-contact-bar a {
+  flex: 1;
+  max-width: 180px;
+  text-align: center;
+}
+
+/* Responsive fixes */
+@media screen and (max-width: 768px) {
+  .main-content, main, .content, .wrapper {
+    padding-bottom: 140px; /* Prevent sticky button overlap */
+  }
+}
